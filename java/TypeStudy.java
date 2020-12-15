@@ -1,6 +1,6 @@
 public class TypeStudy {
 
-    private static final int CONST_VALUE = 12345;
+    private final static int CONST_VALUE = 12345;
     
     public static void main(String[] args) {
         System.out.println(TypeStudy.testUpperAndLowerCase());
@@ -9,7 +9,10 @@ public class TypeStudy {
         System.out.println(1.1/0);
         // System.out.println(1/0);
         System.out.println(2 >> 1);
-        System.out.println(2 >> 1);
+        System.out.println(2 << 1);
+        System.out.println(2 >>> 1);
+        // illegal operator
+        // System.out.println(2 <<< 1);
     }
 
     private static boolean testUpperAndLowerCase() {
