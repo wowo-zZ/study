@@ -7,8 +7,8 @@ import java.io.IOException;
 public class InputOutput {
     public static void main (String[] args) {
         InputOutput io = new InputOutput();
-        // io.testScanner();
-        // io.testConsole();
+        io.testScanner();
+        io.testConsole();
         io.testFileReadAndWrite();
     }
 
