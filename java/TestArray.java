@@ -20,5 +20,9 @@ public class TestArray {
         System.out.println(Arrays.toString(a));
         a = new int[] {1, 2, 3, 4};
         System.out.println(Arrays.toString(a));
+
+        int[] c = Arrays.copyOf(a, a.length);
+        a[2] = 11111;
+        System.out.println(Arrays.toString(c));
     }
 }
