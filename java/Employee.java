@@ -32,4 +32,8 @@ public class Employee {
         // 类的方法可以访问同类实例下的私有属性
         System.out.println(String.format("%s say hello to %s", name, e.getName()));
     }
+
+    public String toString() {
+        return String.format("I am %s, and I am %d years old now!", this.getName(), this.getAge());
+    }
 }
