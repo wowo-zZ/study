@@ -1,8 +1,12 @@
+package javadoc;
 /**
  * This is a javadoc test file
  * <strong>test strong</strong>
  * <em>test em</em>
- * 
+ * @author wowo
+ * @since v1.1
+ * @version v1.3
+ * @see <a href="https://doc.xfyun.cn">查看文档</a>
  */
 public class TestJavaDoc {
     
@@ -15,10 +19,18 @@ public class TestJavaDoc {
 
 
     /**
-     * @param name
+     * @param name 测试name
      * @return String
      */
-    public String getName() {
+    public String getName(String name) {
         return "testjavadoc";
+    }
+
+    /**
+     * @see TestJavaDoc#getName(String)
+     * @return String
+     */
+    public String testMethod() {
+        return "hello wowo";
     }
 }
