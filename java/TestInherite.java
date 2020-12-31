@@ -16,7 +16,8 @@ public class TestInherite {
 
     public class Son extends Father {
         public Son() {
-            
+            // 如果没有这个，无法编译通过
+            super("zs", 12);
         }
     }
 }
