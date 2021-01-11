@@ -22,7 +22,9 @@ public class TestReflect {
             // Object v = name.get(rf);
             // String rfName = (String) v;
             Method getName = rf.getClass().getDeclaredMethod("getName");
+            getName.setAccessible(true);
             String n = (String) getName.invoke(rf);
+            System.out.println(String.format("after setAccessible, the metchod can be called: %s", n));
             Constructor c = rf.getClass().getDeclaredConstructor(String.class, int.class);
             ReflectFather rf2 = (ReflectFather) c.newInstance("chj", 59);
             System.out.println(rf2);
@@ -42,7 +44,7 @@ class ReflectFather {
         age = aAge;
     }
 
-    public String getName() {
+    private String getName() {
         return name;
     }
 
