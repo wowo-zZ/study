@@ -15,6 +15,10 @@ public class TestLambda {
         // 传入数组的泛型类必须为实现了java.lang.Comparable的类
         Arrays.sort(tc);
         System.out.println(tc[1].getValue());
+
+        Comparable iComparable;
+        // lambda表达式也无法赋值给函数式接口的变量
+        // iComparable = (a, b) -> a.length() - b.length();
     }
 }
 
