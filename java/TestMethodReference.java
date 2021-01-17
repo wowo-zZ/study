@@ -7,8 +7,8 @@ public class TestMethodReference extends Greeter{
     }
 
     public void timeGreet() {
-        Timer t = new Timer(1000, super::greet);
-        t.start();
+        // Timer t = new Timer(1000, super::greet);
+        // t.start();
     }
 }
 
