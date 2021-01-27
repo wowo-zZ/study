@@ -5,3 +5,4 @@ update.sh
 *.png
 *.zip
 element-list
+PHP/vendor
