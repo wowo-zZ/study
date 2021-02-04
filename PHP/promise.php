@@ -2,7 +2,6 @@
 $promise = new Promise(function () {
     return 1;
 });
-echo 2;
 
 class Promise {
 
