@@ -1,9 +1,9 @@
 package com.wowozz.study;
 
-public class Application
-{
-    public static void main(String... args) 
+public class Application {
+    
+    public void run() 
     {
-        System.out.println("Hello Spring!");
+        
     }
 }
