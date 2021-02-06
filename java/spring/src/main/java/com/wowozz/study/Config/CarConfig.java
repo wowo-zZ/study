@@ -4,10 +4,11 @@ import com.wowozz.study.Components.Car;
 import com.wowozz.study.Components.impl.Benz;
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
-@ComponentScan("com.wowozz.study")
-public class AppConfig {
+@Configuration
+public class CarConfig {
+    
     @Bean
     public Car GermanyCar() {
         return new Benz();
