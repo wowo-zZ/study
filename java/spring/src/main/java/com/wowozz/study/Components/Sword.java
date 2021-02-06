@@ -6,6 +6,8 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
+import com.wowozz.study.Annotations.Germany;
+
 @Component
 @PropertySource("classpath:dev.properties")
 public class Sword {
@@ -16,7 +18,8 @@ public class Sword {
     Environment env;
 
     @Autowired()
-    @Qualifier("benz")
+    @Qualifier("highLevel")
+    @Germany
     Car car;
     
     public void cut()

@@ -1,6 +1,7 @@
 package com.wowozz.study.Components.impl;
 
 import com.wowozz.study.Components.Car;
+import com.wowozz.study.Annotations.Germany;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
@@ -10,7 +11,8 @@ import org.springframework.stereotype.Component;
 @Component
 @Profile("prod")
 @Primary
-@Qualifier("benz")
+@Qualifier("highLevel")
+@Germany
 public class Benz implements Car{
     
     public void run() {
